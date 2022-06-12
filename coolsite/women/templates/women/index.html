@@ -1,0 +1,11 @@
+{% extends 'women/base.html' %}
+
+{% block content %}
+<h1> Содержимое главной страницы</h1>
+{% for p in posts %}
+<div>
+    <p>{{p.title}}</p>
+    <p>{{p.content}}</p>
+</div>
+{% endfor %}
+{% endblock content %}
